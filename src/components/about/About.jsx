@@ -38,7 +38,7 @@ const About = () => {
         <div
           className="d-flex align-items-center justify-content-center title-text"
           style={{
-            margin: "2rem 0rem",
+            margin: "2rem 0rem 0rem 0rem",
             borderBottom: "2px solid #4f837f",
             color: "#4f837f",
           }}
@@ -47,7 +47,7 @@ const About = () => {
         </div>
 
         <Row>
-          <Col lg="6">
+          <Col lg="6" style={{ marginTop: "2rem" }}>
             <img
               src={Me}
               style={{
@@ -58,7 +58,7 @@ const About = () => {
               }}
             />
           </Col>
-          <Col lg="6">
+          <Col lg="6" style={{ marginTop: "2rem" }}>
             <div className="skills-container">
               <div className="d-flex align-items-center justify-content-center title-text">
                 <h2>My Skills</h2>
