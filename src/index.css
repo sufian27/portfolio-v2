@@ -52,3 +52,61 @@ code {
     ),
     url("./img/project-bg.jpg") fixed;
 }
+
+/* Projects section */
+#projects {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(79, 131, 127, 0.9) 0%,
+      #ffffff,
+      rgba(50, 50, 50, 1)
+    ),
+    url("./img/project-bg.jpg") fixed;
+}
+
+.projects-img {
+  border: 1px solid black;
+  height: 350px;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  /* for big screens */
+  .project-img {
+    border: 1px solid black;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .project-img img {
+    transition: transform 0.5s ease;
+  }
+
+  .project-img:hover img {
+    transform: scale(1.5);
+  }
+}
+
+.featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .featured-text {
+    padding: 0 1rem 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+/* Publications */
+#publications {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(143, 30, 37, 0.5) 50%
+  );
+}

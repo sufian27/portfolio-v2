@@ -3,6 +3,8 @@ import "./App.css";
 import MyNavbar from "./components/navbar";
 import Home from "./components/home";
 import About from "./components/about";
+import Projects from "./components/projects";
+import Publications from "./components/publications";
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -18,6 +20,8 @@ function App() {
       <MyNavbar scroll={scroll} />
       <Home />
       <About />
+      <Projects />
+      <Publications />
     </div>
   );
 }
