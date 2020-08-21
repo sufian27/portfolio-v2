@@ -33,20 +33,18 @@ const Projects = () => {
   const [width, setWidth] = useState();
 
   useEffect(() => {
-    console.log("hello");
-    // window.addEventListener(
-    //   "scroll",
-    //   () => {
-    //     setWidth(window.innerWidth);
-    //   },
-    //   true
-    // );
-
-    // return () => {
-    //   window.removeEventListener("resize", () =>
-    //     console.log("Listener removed")
-    //   );
-    // };
+    window.addEventListener(
+      "resize",
+      () => {
+        setWidth(window.innerWidth);
+      },
+      true
+    );
+    return () => {
+      window.removeEventListener("resize", () =>
+        console.log("Listener removed")
+      );
+    };
   }, []);
 
   return (
@@ -110,7 +108,7 @@ const Projects = () => {
         <br />
 
         {projects.map(({ name, desc, img, href }, index) =>
-          index % 2 === 1 || width < 892 ? ( //right
+          index % 2 === 1 || width < 992 ? ( //right
             <>
               <Row
                 className="shadow d-flex justify-content-center"

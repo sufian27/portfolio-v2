@@ -5,6 +5,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Publications from "./components/publications";
+import Contact from "./components/contact";
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -22,6 +23,10 @@ function App() {
       <About />
       <Projects />
       <Publications />
+      <Contact />
+      <footer class="small text-center text-white-50">
+        <div class="container">Designed by Sufian Mushtaq</div>
+      </footer>
     </div>
   );
 }
