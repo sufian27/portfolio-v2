@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import MyNavbar from "./components/navbar";
 import Home from "./components/home";
@@ -9,20 +9,29 @@ import Contact from "./components/contact";
 
 function App() {
   const [scroll, setScroll] = useState(0);
+  const [active, setActive] = useState({
+    about: false,
+    projects: false,
+    publications: false,
+  });
   useEffect(() => {
-    window.addEventListener("scroll", () => setScroll(window.scrollY));
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY);
+    });
     return () =>
       window.removeEventListener("scroll", () =>
         console.log("removed scroll listener")
       );
   }, []);
+
+  useEffect(() => console.log(active), [active]);
   return (
     <div className="App">
-      <MyNavbar scroll={scroll} />
+      <MyNavbar scroll={scroll} setActive={setActive} active={active} />
       <Home />
-      <About />
-      <Projects />
-      <Publications />
+      <About active={active["about"]} />
+      <Projects active={active["projects"]} />
+      <Publications active={active["publications"]} />
       <Contact />
       <footer class="small text-center text-white-50">
         <div class="container">Designed by Sufian Mushtaq</div>

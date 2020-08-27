@@ -12,6 +12,44 @@ code {
     monospace;
 }
 
+/* Navbar */
+
+.transparent {
+  transition: background 500ms;
+  background: transparent;
+}
+
+.light {
+  transition: background 500ms;
+  background: white;
+}
+
+.navbar-nav .navbar-link-bg-light {
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.navbar-nav .navbar-link-bg-dark {
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.navbar-nav .navbar-link:hover {
+  color: rgb(100, 161, 157);
+  box-shadow: 0 4px 2px -2px rgb(100, 161, 157);
+}
+
+.navbar-nav .active {
+  color: rgb(100, 161, 157);
+  box-shadow: 0 4px 2px -2px rgb(100, 161, 157);
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+
 /*About styling*/
 
 #about {
@@ -66,10 +104,12 @@ code {
     url("./img/project-bg.jpg") fixed;
 }
 
-.projects-img {
-  border: 1px solid black;
-  height: 350px;
-  overflow: hidden;
+@media (max-width: 992px) {
+  .project-img {
+    border: 1px solid black;
+    height: 300px;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 992px) {
@@ -87,10 +127,30 @@ code {
   .project-img:hover img {
     transform: scale(1.5);
   }
+
+  .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
 }
 
 .featured-text {
   padding: 2rem;
+}
+
+.featured-text a {
+  color: #70afab;
+}
+
+.featured-text a:hover {
+  color: #588b88;
+  text-decoration: none;
+}
+
+.featured-text a:active {
+  color: #406e6b;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -98,6 +158,20 @@ code {
     padding: 0 1rem 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
+}
+
+.project-text a {
+  color: whitesmoke;
+}
+
+.project-text a:hover {
+  color: #64a19d;
+  text-decoration: none;
+}
+
+.project-text a:active {
+  color: #406e6b;
+  text-decoration: none;
 }
 
 /* Publications */
@@ -217,7 +291,32 @@ code {
   }
 }
 
+.email {
+  color: #70afab;
+}
+
+.email:hover {
+  color: #588b88;
+  text-decoration: none;
+}
+
+.email:active {
+  color: #406e6b;
+  text-decoration: none;
+}
+
+.fa-mobile {
+  color: black;
+}
 footer {
   padding: 5rem 0;
   background-color: #161616;
+}
+
+.main-container {
+  background: rgba(255, 255, 255, 0.3);
+}
+.container-active {
+  transition: background 500ms;
+  background: rgba(255, 255, 255, 1);
 }

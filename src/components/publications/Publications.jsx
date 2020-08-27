@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
-import Me from "../../img/me.JPG";
+// import Me from "../../img/me.JPG";
+import Publication from "../../img/publication.PNG";
 
-const Publications = () => {
+const Publications = ({ active }) => {
   return (
     <section id="publications">
       <Container
-        className="shadow"
+        className={`shadow main-container ${active ? " container-active" : ""}`}
         style={{
           // minHeight: "100vh",
-          background: "rgba(255, 255, 255, 1.0)", //transition from grey to white
           border: "1px solid transparent",
           borderRadius: "15px",
         }}
@@ -27,13 +27,13 @@ const Publications = () => {
         <Row className="shadow" style={{ margin: "20px" }}>
           <Col lg="7" className="project-img">
             <a
-              href="https://github.com/sufian27/shortest-path-map"
+              href="https://media-exp1.licdn.com/dms/document/C4D1FAQFCB8sznTX7OA/feedshare-document-pdf-analyzed/0?e=1598644800&v=beta&t=0bYzjlvG9YzWhKjp2CnYL-WG48wsyiPmVOi_ubRi5kk"
               target="_blank"
             >
               <img
                 class="img-fluid mb-3 mb-lg-0"
-                src={Me}
-                alt="featured project"
+                src={Publication}
+                alt="publication"
               />
             </a>
           </Col>
@@ -45,15 +45,16 @@ const Publications = () => {
             }}
           >
             <div class="featured-text text-lg-left">
-              <a
-                href="https://github.com/sufian27/shortest-path-map"
-                target="_blank"
-              >
-                <h4>
+              <h4>
+                <a
+                  href="https://media-exp1.licdn.com/dms/document/C4D1FAQFCB8sznTX7OA/feedshare-document-pdf-analyzed/0?e=1598644800&v=beta&t=0bYzjlvG9YzWhKjp2CnYL-WG48wsyiPmVOi_ubRi5kk"
+                  target="_blank"
+                >
                   Empowering Teachers to Integrate Machine Learning into K-12
                   Scientific Discovery
-                </h4>
-              </a>
+                </a>
+              </h4>
+
               <p class="text-black-50 mb-0">
                 We co-designed a learning environment called SmileyDiscovery
                 with science teachers to investigate opportunities of

@@ -4,14 +4,14 @@ import Me from "../../img/me.JPG";
 
 const Contact = () => {
   return (
-    <section className="contact-section shadow" id="contact">
+    <section className="contact-section" id="contact">
       <Container>
         <div
           className="d-flex align-items-center justify-content-center title-text"
           style={{
             margin: "2rem 0rem 0rem 0rem",
             borderBottom: "2px solid #4f837f",
-            color: "#4f837f",
+            color: "rgba(0,0,0, 0.55)",
           }}
         >
           <h1>Contact</h1>
@@ -36,13 +36,13 @@ const Contact = () => {
                 <i className="fa fa-envelope text-primary mb-2"></i>
                 <h4 className="text-uppercase m-0">Email</h4>
                 <hr className="my-4" />
-                <div className="small text-black-50">
-                  <a href="mailto:sufianmushtaq@gmail.com">
+                <div className="small">
+                  <a href="mailto:sufianmushtaq@gmail.com" className="email">
                     sufianmushtaq@gmail.com
                   </a>
                 </div>
-                <div className="small text-black-50">
-                  <a href="mailto:smushtaq@u.rochester.edu">
+                <div className="small">
+                  <a href="mailto:smushtaq@u.rochester.edu" className="email">
                     smushtaq@u.rochester.edu
                   </a>
                 </div>

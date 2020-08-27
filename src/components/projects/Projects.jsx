@@ -1,36 +1,57 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Me from "../../img/me.JPG";
+import {
+  Checkers,
+  LobPong,
+  Portfolio,
+  RecDescParser,
+  ShoppingMERN,
+  ShortestPathMap,
+  SmileyDiscovery,
+} from "../../img/projects";
 
-const Projects = () => {
+const Projects = ({ active }) => {
   const [projects, setProjects] = useState([
     {
-      name: "Project 1",
+      name: "SmileyDiscovery (under dev)",
       desc: "Project 1 description",
-      img: Me,
-      href: "https://github.com/sufian27/shortest-path-map",
+      img: SmileyDiscovery,
+      href: "https://machinteraction.ur.rochester.edu/SmileyDiscovery/",
     },
     {
-      name: "Project 2",
+      name: "Intelligent Checkers",
       desc: "Project 2 description",
-      img: Me,
-      href: "https://github.com/sufian27/shortest-path-map",
+      img: Checkers,
+      href: "https://github.com/sufian27/intelligent-checkers",
     },
     {
-      name: "Project 3",
+      name: "Recursive Descent Parser for RegEx",
       desc: "Project 3 description",
-      img: Me,
-      href: "https://github.com/sufian27/shortest-path-map",
+      img: RecDescParser,
+      href: "https://github.com/sufian27/recursive-descent-parser",
     },
     {
-      name: "Project 4",
+      name: "Lob Pong",
       desc: "Project 4 description",
-      img: Me,
-      href: "https://github.com/sufian27/shortest-path-map",
+      img: LobPong,
+      href: "https://github.com/sufian27/lob-pong",
+    },
+    {
+      name: "Shopping List",
+      desc: "Project 4 description",
+      img: ShoppingMERN,
+      href: "https://github.com/sufian27/ShoppingList-MERN",
+    },
+    {
+      name: "Portfolio",
+      desc: "Project 4 description",
+      img: Portfolio,
+      href: "https://github.com/sufian27/portfolio-v2",
     },
   ]);
 
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     window.addEventListener(
@@ -50,10 +71,9 @@ const Projects = () => {
   return (
     <section id="projects">
       <Container
-        className="shadow"
+        className={`shadow main-container ${active ? " container-active" : ""}`}
         style={{
           minHeight: "100vh",
-          background: "rgba(255, 255, 255, 1.0)", //transition from grey to white
           border: "1px solid transparent",
           borderRadius: "15px",
         }}
@@ -76,7 +96,7 @@ const Projects = () => {
             >
               <img
                 class="img-fluid mb-3 mb-lg-0"
-                src={Me}
+                src={ShortestPathMap}
                 alt="featured project"
               />
             </a>
@@ -89,14 +109,17 @@ const Projects = () => {
             }}
           >
             <div class="featured-text text-lg-left">
-              <a
-                href="https://github.com/sufian27/shortest-path-map"
-                target="_blank"
-              >
-                <h4>
-                  Shortest Path Map <span id="star">&#9733;</span>
-                </h4>
-              </a>
+              <h4>
+                <a
+                  href="https://github.com/sufian27/shortest-path-map"
+                  target="_blank"
+                >
+                  Shortest Path Map{" "}
+                </a>
+                <span id="star" style={{ color: "#ffd700" }}>
+                  &#9733;
+                </span>
+              </h4>
               <p class="text-black-50 mb-0">
                 I used Java to implement Dijkstra's algorithm to compute the
                 shortest path between two points on a map. The graphics are
@@ -116,11 +139,7 @@ const Projects = () => {
               >
                 <Col lg="6" className="project-img">
                   <a href={href} target="_blank">
-                    <img
-                      class="img-fluid mb-3 mb-lg-0"
-                      src={img}
-                      alt="featured project"
-                    />
+                    <img class="img-fluid mb-3 mb-lg-0" src={img} alt={name} />
                   </a>
                 </Col>
                 <Col lg="6" style={{ background: "#161616" }}>
@@ -130,9 +149,12 @@ const Projects = () => {
                         class="project-text w-100 my-auto text-center text-lg-left"
                         style={{ padding: "5rem" }}
                       >
-                        <a href={href} target="_blank">
-                          <h4 class="text-white">{name}</h4>
-                        </a>
+                        <h4 class="project-title">
+                          <a href={href} target="_blank">
+                            {name}
+                          </a>
+                        </h4>
+
                         <p class="mb-0 text-white-50">{desc}</p>
                         <hr class="d-none d-lg-block mb-0 ml-0" />
                       </div>
@@ -155,9 +177,12 @@ const Projects = () => {
                         class="project-text w-100 my-auto text-center text-lg-left"
                         style={{ padding: "5rem" }}
                       >
-                        <a href={href} target="_blank">
-                          <h4 class="text-white">{name}</h4>
-                        </a>
+                        <h4 class="project-title">
+                          <a href={href} target="_blank">
+                            {name}
+                          </a>
+                        </h4>
+
                         <p class="mb-0 text-white-50">{desc}</p>
                         <hr class="d-none d-lg-block mb-0 ml-0" />
                       </div>
@@ -166,11 +191,7 @@ const Projects = () => {
                 </Col>
                 <Col lg="6" className="project-img">
                   <a href={href} target="_blank">
-                    <img
-                      class="img-fluid mb-3 mb-lg-0"
-                      src={img}
-                      alt="featured project"
-                    />
+                    <img class="img-fluid mb-3 mb-lg-0" src={img} alt={name} />
                   </a>
                 </Col>
               </Row>
