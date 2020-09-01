@@ -27,7 +27,7 @@ const MyNavbar = ({ scroll, setActive, active }) => {
                 to="about"
                 smooth={true}
                 spy={true}
-                offset={-100}
+                offset={-200}
                 className={`navbar-link navbar-link-${
                   scroll > 20 ? "bg-light" : "bg-dark"
                 }`}
@@ -39,7 +39,7 @@ const MyNavbar = ({ scroll, setActive, active }) => {
                 to="projects"
                 smooth={true}
                 spy={true}
-                offset={-100}
+                offset={-200}
                 className={`navbar-link navbar-link-${
                   scroll > 20 ? "bg-light" : "bg-dark"
                 }`}
@@ -51,7 +51,7 @@ const MyNavbar = ({ scroll, setActive, active }) => {
                 to="publications"
                 smooth={true}
                 spy={true}
-                offset={-100}
+                offset={-200}
                 className={`navbar-link navbar-link-${
                   scroll > 20 ? "bg-light" : "bg-dark"
                 }`}
@@ -63,7 +63,7 @@ const MyNavbar = ({ scroll, setActive, active }) => {
                 to="contact"
                 smooth={true}
                 spy={true}
-                offset={-100}
+                offset={-200}
                 className={`navbar-link navbar-link-${
                   scroll > 20 ? "bg-light" : "bg-dark"
                 }`}

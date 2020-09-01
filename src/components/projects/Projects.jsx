@@ -13,39 +13,51 @@ import {
 
 const Projects = ({ active }) => {
   const [projects, setProjects] = useState([
+    //pull from database later
     {
       name: "SmileyDiscovery (under dev)",
-      desc: "Project 1 description",
+      desc: `Made an online platform to help teach Machine Learning concepts 
+            to K12 high school students through Chernoff faces data visualization 
+            using Node.js, React.js, Redux, MS SQL, and Python.`,
       img: SmileyDiscovery,
       href: "https://machinteraction.ur.rochester.edu/SmileyDiscovery/",
     },
     {
       name: "Intelligent Checkers",
-      desc: "Project 2 description",
+      desc: `Designed and implemented an AI program that plays a game of checkers against
+            human or computer opponents. It uses several versions of the Minimax algorithm 
+            to make intelligent moves. The program is written in Java.`,
       img: Checkers,
       href: "https://github.com/sufian27/intelligent-checkers",
     },
     {
       name: "Recursive Descent Parser for RegEx",
-      desc: "Project 3 description",
+      desc: `Wrote a recursive descent parser in C for a grammar that defines 
+            the language of Regular Expressions. It takes advantage of pointers the low level nature
+            of C and manages memory efficiently.`,
       img: RecDescParser,
       href: "https://github.com/sufian27/recursive-descent-parser",
     },
     {
       name: "Lob Pong",
-      desc: "Project 4 description",
+      desc: `Built a lob pong game using the Java swing library. This lob pong game is one of my 
+            first Java projects and makes use of event-driven programming to create animations based 
+            on user input.`,
       img: LobPong,
       href: "https://github.com/sufian27/lob-pong",
     },
     {
       name: "Shopping List",
-      desc: "Project 4 description",
+      desc: `Created a Full stack application using the MERN stack. It demonstrates a basic web application
+            infrastructure and shows how the React.js UI interacts with the Express.js backend while the application 
+            state is managed using Redux.`,
       img: ShoppingMERN,
       href: "https://github.com/sufian27/ShoppingList-MERN",
     },
     {
       name: "Portfolio",
-      desc: "Project 4 description",
+      desc: `I made this website to showcase my achievements and experiences. It is made using React.js and will
+            eventually feature more content and will also be connected to a GraphQL backend.`,
       img: Portfolio,
       href: "https://github.com/sufian27/portfolio-v2",
     },

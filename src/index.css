@@ -1,3 +1,7 @@
+.App {
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -314,9 +318,10 @@ footer {
 }
 
 .main-container {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255);
+  opacity: 0.3;
 }
 .container-active {
-  transition: background 500ms;
-  background: rgba(255, 255, 255, 1);
+  transition: opacity 500ms;
+  opacity: 1;
 }

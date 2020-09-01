@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./App.css";
 import MyNavbar from "./components/navbar";
 import Home from "./components/home";
 import About from "./components/about";
@@ -7,7 +6,7 @@ import Projects from "./components/projects";
 import Publications from "./components/publications";
 import Contact from "./components/contact";
 
-function App() {
+const App = () => {
   const [scroll, setScroll] = useState(0);
   const [active, setActive] = useState({
     about: false,
@@ -38,6 +37,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;

@@ -27,7 +27,7 @@ const Publications = ({ active }) => {
         <Row className="shadow" style={{ margin: "20px" }}>
           <Col lg="7" className="project-img">
             <a
-              href="https://media-exp1.licdn.com/dms/document/C4D1FAQFCB8sznTX7OA/feedshare-document-pdf-analyzed/0?e=1598644800&v=beta&t=0bYzjlvG9YzWhKjp2CnYL-WG48wsyiPmVOi_ubRi5kk"
+              href="https://drive.google.com/file/d/1hXSY8qaQYz8pXlrmmVJH5KA2i776GtMW/view?usp=sharing"
               target="_blank"
             >
               <img
