@@ -43,7 +43,7 @@ const Home = () => {
               </h1>
             </Col>
           </Row>
-          <Row>
+          <Row style={{ maxWidth: "100vw" }}>
             <Col xs="12">
               <h1 style={{ color: "whitesmoke", textAlign: "center" }}>
                 <Typed
