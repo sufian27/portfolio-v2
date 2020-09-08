@@ -47,7 +47,7 @@ const Publications = ({ active }) => {
             <div class="featured-text text-lg-left">
               <h4>
                 <a
-                  href="https://media-exp1.licdn.com/dms/document/C4D1FAQFCB8sznTX7OA/feedshare-document-pdf-analyzed/0?e=1598644800&v=beta&t=0bYzjlvG9YzWhKjp2CnYL-WG48wsyiPmVOi_ubRi5kk"
+                  href="https://drive.google.com/file/d/1hXSY8qaQYz8pXlrmmVJH5KA2i776GtMW/view?usp=sharing"
                   target="_blank"
                 >
                   Empowering Teachers to Integrate Machine Learning into K-12
