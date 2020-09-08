@@ -96,7 +96,7 @@ const About = ({ active }) => {
               }}
             >
               I am currently a junior at University of Rochester pursuing a
-              major in Computer Science and Business. During the summer of 2019,
+              major in Computer Science and a minor Business. During the summer of 2019,
               I interned for the first time at start-up company and worked as a
               full-stack developer. During my time there I saw how much depth
               web applications have and began exploring this vast field. I found
