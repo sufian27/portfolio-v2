@@ -95,21 +95,20 @@ const About = ({ active }) => {
                 margin: "0px",
               }}
             >
-              I am currently a junior at University of Rochester pursuing a
-              major in Computer Science and a minor Business. During the summer of 2019,
-              I interned for the first time at start-up company and worked as a
-              full-stack developer. During my time there I saw how much depth
-              web applications have and began exploring this vast field. I found
-              out how a full-stack developer’s work includes juggling through
-              many things such as planning, organizing, and streamlining tasks.
-              This is very fitting with my work-ethic, which is why I want to
-              pursue this field. I've continued my journey as a full-stack
-              developer and currently work at at the HCI department of my
-              college where I’m improving my skills as a programmer and an
-              engineer. I've also had the opportunity to intern as a full-stack
-              engineering intern at Perflo where I have received an insight into
-              the US tech industry and have had the chance to be part of an
-              agile team.
+              I am currently a junior at University of Rochester pursuing a major 
+              in Computer Science and a minor in Business. During the summer of 2019, 
+              I interned for the first time at start-up company and worked as a 
+              full-stack developer. During my time there I saw how much depth web 
+              applications have and began exploring this vast field. I found out how a 
+              full-stack developer’s work includes juggling through many things such as
+               planning, organizing, and streamlining tasks. This is very fitting with 
+               my work-ethic, which is why I want to pursue this field. I've continued 
+               my journey as a full-stack developer and am currently working at at 
+               the HCI department of my college where I’m improving my skills as a 
+               programmer, a problem solver, and a researcher. I've also had the opportunity
+                to intern as a full-stack engineer at Perflo where I have received an 
+                insight into the US tech industry and have had the chance to be part of 
+                an agile team. 
             </p>
           </Col>
         </Row>
